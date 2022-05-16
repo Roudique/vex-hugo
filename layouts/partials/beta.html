@@ -4,19 +4,17 @@
 {{- with $data.homepage.beta }}
 
 <div class="container">
-<div class="row">
-	<div class="col-md-4 mb-4 mb-md-0">
-            <img class="img-fluid w-50" align="right" src="{{ .qr_image | markdownify }}">
+  <div class="row">
+    <div class="col-md-4 mb-4 mb-md-0">
+      <img class="img-fluid w-50" align="right" src="{{ .qr_image | markdownify }}">
     </div>
-        <div class="col-lg-6 col-md-7 offset-lg-1">
-          <h1 class="mb-4">{{ .title | markdownify }}</h1>
-          <h2>
-            <- Scan the QR code to the left <br>
-            Or open the link below on your phone:<br>
-            <a href="{{ .link }}" target="_blank">LINK</a>
-            </h2>
-        </div>
+    <div class="col-lg-6 col-md-7 offset-lg-1">
+      <h1 class="mb-4">{{ .title | markdownify }}</h1>
+      <h2>
+        <- Scan the QR code to the left <br>
+      </h2>
     </div>
+  </div>
 </div>
 
 
