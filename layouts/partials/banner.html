@@ -15,9 +15,9 @@
 					<p class="mb-4">{{ .content | markdownify }}</p>
 					{{ if .appstore_button.enable }}
 					{{ with .appstore_button }}
-					<!-- <a target="_blank" href={{ .link }}> -->
-						<img src="images/app-store-coming-soon.png" width="250" alt="Download on the App Store">
-					<!-- </a> -->
+					<a target="_blank" href={{ .link }}>
+						<img src="images/download-app-store.png" width="250" alt="Download on the App Store">
+					</a>
 					{{ end }}
 					{{ end }}
 				</div>
