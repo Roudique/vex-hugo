@@ -21,6 +21,8 @@
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
 
+  <meta property="og:image" content="images/thumbnail.png" />"
+
   {{ with .Params.image }}
   <meta property="og:image" content="{{ . | absURL }}" />
   {{ end }}
